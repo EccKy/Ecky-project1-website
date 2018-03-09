@@ -1,0 +1,103 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+body {
+	font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+	color: #222;
+	background-color: #eee;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	width: 90%;
+	max-width: 1200px;
+	padding: 2em;
+	background-color: #fff;
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap:2em;
+	background-image: url("../img/fc6d6947296077.587629685d031.jpg");
+}
+h1{
+	color: #FFEFEF;
+	font-family: 'Bree Serif', serif;
+}
+
+a{
+	color:#D6C6D9;
+	
+	display: inline;
+}
+
+.box {
+	padding: 0.5em 1em 1em 1em;
+	background-color: rgba(127,185,192,0.8);
+}
+
+.box-d {
+	background-color: #C9E8E8;
+}
+
+.box-e {
+	background-color: #7EC2B6;
+}
+.box-b{
+	background-image: url("../img/LeyendeckerEaster.jpg");
+}
+.box-i{
+	color:#FFEFEF;
+	background-image: url("../img/Kellogs-Girl-for-web.jpg");
+}
+.box-g{
+	background-color: rgba(110,225,169,0.8);
+}
+.box-h{
+	background-color: rgba(232,169,168,0.8);
+}
+
+.title1{
+	grid-row:1/2;
+	grid-column:1/4;
+	font-size: 16px;
+	
+	border:4px solid #F8FFD1;
+	background-color:rgba(173,123,98,0.8);
+}
+
+
